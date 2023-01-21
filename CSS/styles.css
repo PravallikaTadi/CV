@@ -139,23 +139,11 @@ display:inline;
     height:100vh;
     font-size:1vw;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1.5fr 0.5fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "skill-1 skill-2 skill-2"
-    "skill-3 skill-4 skill-4"
-  /*  ". . .";*/
-}
-
-.skill-1 div {
-height:auto;
-grid-area: skill-1;
-}
+.prog { grid-area: prog; }
+.data { grid-area: data; }
+.www { grid-area: www; }
+.softtools { grid-area: softtools; }
+.skill-1 {grid-area: skill-1;}
 
 .skill-2 { grid-area: skill-2; }
 
@@ -163,16 +151,28 @@ grid-area: skill-1;
 
 .skill-4 { grid-area: skill-4;}
 
-.cloud-img {
-  width: 25%;
-  float: left;
-  margin-left: 30px;
+
+.grid-container {
+  display: grid;
+  padding:0px;
+  grid-gap: 0px;
+  grid-template-areas:
+    "prog skill-1 skill-1 data skill-2 skill-2 "
+    "www skill-3 skill-3 softtools skill-4 skill-4";
+  grid-template-columns:auto auto auto auto;
+  grid-template-rows: auto auto;
+  font-size: 1vw;
+
+  /*  ". . .";*/
 }
 
+.grid-container div{
+  text-align: justify;
+}
 .code-img {
-  width: 25%;
-  float: left;
-  margin-left: 30px;
+  width: 100%;
+  float: center;
+  padding: 5vw 0vw 5vw 0vw;
 }
 
 #Experience{
