@@ -133,7 +133,7 @@ display:inline;
 
 #skills-tab{
     background-color: #112031;
-    padding: 2% 3% 5% 5%;
+    padding: 5% 3% 5% 5%;
     color:White;
     height:100vh;
     font-size:1vw;
@@ -176,7 +176,7 @@ grid-area: skill-1;
 
 #Experience{
     background-color:green;
-    padding-top:15vw;
+    padding:5% 3% 5% 5%;
     font-family: 'Montserrat', sans-serif;
     height:100vh;
 }
