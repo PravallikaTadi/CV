@@ -175,7 +175,7 @@ grid-area: skill-1;
 }
 
 #Experience{
-    background-color:green;
+    background: url(bgi1.jpg) no-repeat center center local;
     padding:5% 3% 5% 5%;
     font-family: 'Montserrat', sans-serif;
     height:100vh;
